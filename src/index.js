@@ -13,6 +13,26 @@ const BASE_URL = 'https://6399986129930e2bb3d85d7f.mockapi.io/';
 //    }
 // getUsers();
 // getUsersById(3);
+// -----------------------------------------------------------
+
+// ______________________________Variant-2  GET__________________________
+// // export const postContact = contact => {
+//   const options = {
+//     method: 'POST',
+//     body: JSON.stringify(contact),
+//     headers: {
+//       'Content-Type': 'application/json; charset=UTF-8',
+//     },
+//   };
+//   const url = `${BASE_URL}/contacts`;
+//   return fetch(url, options).then(response => {    с прокидом ошибки
+//     if (!response.ok) {
+//       throw new Error(response.status);
+//     }
+//     return response.json();
+//   });
+// };
+
 
 // ----------------------------Method POST(добавить в DB)--------------------------------
 
@@ -20,7 +40,7 @@ const BASE_URL = 'https://6399986129930e2bb3d85d7f.mockapi.io/';
 //   const options = { // указываем метод, заголовки,
 //     method: 'POST',
 //     headers: {
-//       'Content-Type': 'application/json',
+//       'Content-Type': 'application/json'; charset=UTF-8',
 //     },
 //     body: JSON.stringify(newUser),// в строку то что на DB
 //   };
@@ -43,7 +63,7 @@ const BASE_URL = 'https://6399986129930e2bb3d85d7f.mockapi.io/';
 //     const options = { // указываем метод, заголовки,
 //       method: 'PATCH',
 //       headers: {
-//         'Content-Type': 'application/json',
+//         'Content-Type': 'application/json'; charset=UTF-8',
 //       },
 //       body: JSON.stringify(update),   // переводит в строку то что отсилается на DB
 //     };
@@ -63,3 +83,5 @@ const BASE_URL = 'https://6399986129930e2bb3d85d7f.mockapi.io/';
 // }
 
 // removeUser(1);
+
+
